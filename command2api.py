@@ -84,6 +84,7 @@ if __name__ == '__main__':
     handler.setLevel(logging.DEBUG)
     handler.setFormatter(logging_format)
 
+    app.logger.setLevel(logging.DEBUG)
     app.logger.addHandler(handler)
 
     parser = argparse.ArgumentParser(
